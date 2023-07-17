@@ -81,11 +81,11 @@ nav ul.menu {
 }
 
 nav ul.menu li {
-  flex: 1; /* Distribuir el espacio de manera equitativa */
+  flex: 1; 
 }
 
 nav ul.menu li:not(:last-child) {
-  margin-right: 10px; /* Margen derecho entre los elementos */
+  margin-right: 10px; 
 }
 
 nav ul.menu li a {
@@ -238,6 +238,8 @@ button[type="submit"] {
 .products>article{
   margin-bottom: 10px;
   background-color: #fff;
+  width: 48%; 
+  margin-bottom: 20px; 
 }
 
 .products>article>div{
@@ -265,6 +267,15 @@ button[type="submit"] {
 
 .products>article>p{
   font-size: 16px;
+}
+
+.products>article:hover .description {
+  max-height: 100px; /* Mostrar el detalle ajustando la altura */
+  margin: 10px 0; /* Agregar un margen para separar los artículos */
+}
+
+.products>article:hover .icon-truck i {
+  transform: rotate(-90deg); /* Rotar el ícono del camión 90 grados */
 }
 
 img{
