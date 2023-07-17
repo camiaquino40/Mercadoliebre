@@ -318,7 +318,7 @@ footer>section{
 /* PC */
 
 @media (min-width:769px) {
-  .productos>article{
+  .products>article{
     width: 24%;
   }
   
