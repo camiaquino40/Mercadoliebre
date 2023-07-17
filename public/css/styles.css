@@ -1,25 +1,30 @@
 
-
 * {
   box-sizing: border-box;
 }
 
 header {
   background-color: #EAC926;
+  padding-bottom: 20px;
+  justify-content: space-between; /* Ajustamos la alineación horizontal */
+  align-items: center; /* Ajustamos la alineación vertical */
 }
 
 .logo {
-  width: 200px;
+  width: 20%;
   height: 100px;
   padding: 20px; 
 }
 
 .cta2 {
+  flex: 1;
   display: flex;
   justify-content: center; 
   align-items: center; 
   height: 50px; 
 }
+
+
 
 .burger-menu {
   width: 30px;
@@ -47,6 +52,7 @@ body {
 
 /* Estilos de la barra de búsqueda */
 .search-bar {
+  flex: 1;
   display: flex;
   align-items: center;
   margin: 20px 0;
@@ -270,12 +276,12 @@ button[type="submit"] {
 }
 
 .products>article:hover .description {
-  max-height: 100px; /* Mostrar el detalle ajustando la altura */
-  margin: 10px 0; /* Agregar un margen para separar los artículos */
+  max-height: 100px; 
+  margin: 10px 0; 
 }
 
 .products>article:hover .icon-truck i {
-  transform: rotate(-90deg); /* Rotar el ícono del camión 90 grados */
+  transform: rotate(-90deg); 
 }
 
 img{
@@ -308,18 +314,24 @@ footer>section{
 
 #footer-info>article>i{
   color:#3483fa;
-  transition: all 400ms; 
+  transition: all 400ms;
+  font-size: 40px;
 }
 
 #footer-info>article>i:hover{
   color:#03264C;
 }
 
+#copyright{
+  font-size: small;
+  color: #a7a7a7;
+}
+
 /* PC */
 
 @media (min-width:769px) {
   .products>article{
-    width: 24%;
+    width: 20%;
   }
   
   .burger-menu{
@@ -350,5 +362,17 @@ footer>section{
     display: flex;
     flex-direction: column;
   }
+
+  #footer-info{
+    display: flex;
+  }
+
+  #copyright{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
+
 
